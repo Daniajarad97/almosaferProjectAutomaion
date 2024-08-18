@@ -1,6 +1,9 @@
 package homePage;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +18,7 @@ public class homePageTesting {
 	WebDriver driver = new ChromeDriver();
 	String almosaferURL = "https://www.almosafer.com/en";
 	String expectedDefalutLanguage = "en";
+	Random rand = new Random();
 
 	@BeforeTest
 	public void setUp() {
@@ -62,5 +66,43 @@ public class homePageTesting {
 				.isDisplayed();
 
 		Assert.assertEquals(actualResultForTheLogo, expectedResyltForTheLogo);
+	}
+
+	@Test(priority = 5, enabled = true)
+	public void theHotelTabIsNotSelected() {
+		String expectedTabSelected = "false";
+		WebElement tabSelected = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
+		String actualTabSelectes = tabSelected.getAttribute("aria-selected");
+
+		Assert.assertEquals(actualTabSelectes, expectedTabSelected);
+
+	}
+
+	@Test(priority = 6, enabled = true)
+	public void checkFlightDeparture() {
+		LocalDate date = LocalDate.now();
+		int tomorrow = date.plusDays(1).getDayOfMonth();
+		int theDayAfterTomorrow = date.plusDays(2).getDayOfMonth();
+
+		List<WebElement> departureAndArrivalDates = driver.findElements(By.className("LiroG"));
+
+		String actualDepartureDate = departureAndArrivalDates.get(0).getText();
+		String actualArrivalDate = departureAndArrivalDates.get(1).getText();
+
+		int actualDepartureDateAsInt = Integer.parseInt(actualDepartureDate);
+		int actualArrivalDateAsInt = Integer.parseInt(actualArrivalDate);
+
+		Assert.assertEquals(actualDepartureDateAsInt, tomorrow);
+		Assert.assertEquals(actualArrivalDateAsInt, theDayAfterTomorrow);
+
+	}
+
+	@Test(priority = 7, enabled = true)
+	public void changeLanguage() {
+		String[] URLs = { "https://www.almosafer.com/en", "https://www.almosafer.com/ar" };
+		int randIndex = rand.nextInt(URLs.length);
+		String randURLs = URLs[randIndex];
+		driver.get(randURLs);
+
 	}
 }
