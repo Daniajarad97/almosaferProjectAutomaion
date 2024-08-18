@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Discovery PC\AppData\Local\Temp\testng-eclipse--1531169132\testng-customsuite.xml</span>
+                    <span>C:\Users\Discovery PC\AppData\Local\Temp\testng-eclipse-980879542\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,6 +130,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="homePage.homePageTesting" class="method navigator-link" hash-for-method="checkTheDefultLanguageIsEnglish">checkTheDefultLanguageIsEnglish</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="homePage.homePageTesting" class="method navigator-link" hash-for-method="switchToHotelSearchTab">switchToHotelSearchTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -199,6 +204,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="switchToHotelSearchTab">
+                  </a> <!-- switchToHotelSearchTab -->
+                  <span class="method-name">switchToHotelSearchTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="theHotelTabIsNotSelected">
                   </a> <!-- theHotelTabIsNotSelected -->
                   <span class="method-name">theHotelTabIsNotSelected</span>
@@ -209,7 +221,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Discovery PC\AppData\Local\Temp\testng-eclipse--1531169132\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Discovery PC\AppData\Local\Temp\testng-eclipse-980879542\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,40 +270,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'changeLanguage')
+data.setCell(0, 1, 'switchToHotelSearchTab')
 data.setCell(0, 2, 'homePage.homePageTesting')
-data.setCell(0, 3, 7638);
+data.setCell(0, 3, 1524);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkFlightDeparture')
+data.setCell(1, 1, 'changeLanguage')
 data.setCell(1, 2, 'homePage.homePageTesting')
-data.setCell(1, 3, 83);
+data.setCell(1, 3, 1207);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkQitafLogoIsDisplayed')
+data.setCell(2, 1, 'checkFlightDeparture')
 data.setCell(2, 2, 'homePage.homePageTesting')
-data.setCell(2, 3, 64);
+data.setCell(2, 3, 195);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'theHotelTabIsNotSelected')
+data.setCell(3, 1, 'checkTheDefultLanguageIsEnglish')
 data.setCell(3, 2, 'homePage.homePageTesting')
-data.setCell(3, 3, 43);
+data.setCell(3, 3, 141);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkDefultCurrency')
+data.setCell(4, 1, 'checkQitafLogoIsDisplayed')
 data.setCell(4, 2, 'homePage.homePageTesting')
-data.setCell(4, 3, 42);
+data.setCell(4, 3, 54);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkTheDefultLanguageIsEnglish')
+data.setCell(5, 1, 'checkDefultCurrency')
 data.setCell(5, 2, 'homePage.homePageTesting')
-data.setCell(5, 3, 41);
+data.setCell(5, 3, 50);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkContactNumber')
+data.setCell(6, 1, 'theHotelTabIsNotSelected')
 data.setCell(6, 2, 'homePage.homePageTesting')
-data.setCell(6, 3, 27);
+data.setCell(6, 3, 32);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkContactNumber')
+data.setCell(7, 2, 'homePage.homePageTesting')
+data.setCell(7, 3, 29);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -324,31 +340,35 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkTheDefultLanguageIsEnglish</span>
-                <span class="method-start">4586 ms</span>
+                <span class="method-start">6236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkDefultCurrency</span>
-                <span class="method-start">4632 ms</span>
+                <span class="method-start">6385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkContactNumber</span>
-                <span class="method-start">4675 ms</span>
+                <span class="method-start">6436 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkQitafLogoIsDisplayed</span>
-                <span class="method-start">4704 ms</span>
+                <span class="method-start">6466 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">theHotelTabIsNotSelected</span>
-                <span class="method-start">4772 ms</span>
+                <span class="method-start">6523 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkFlightDeparture</span>
-                <span class="method-start">4817 ms</span>
+                <span class="method-start">6558 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">changeLanguage</span>
-                <span class="method-start">4905 ms</span>
+                <span class="method-start">6757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">switchToHotelSearchTab</span>
+                <span class="method-start">7968 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

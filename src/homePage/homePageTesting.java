@@ -19,6 +19,7 @@ public class homePageTesting {
 	String almosaferURL = "https://www.almosafer.com/en";
 	String expectedDefalutLanguage = "en";
 	Random rand = new Random();
+	String randomCurrentLang = "";
 
 	@BeforeTest
 	public void setUp() {
@@ -103,6 +104,38 @@ public class homePageTesting {
 		int randIndex = rand.nextInt(URLs.length);
 		String randURLs = URLs[randIndex];
 		driver.get(randURLs);
+		randomCurrentLang = randURLs;
+
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void switchToHotelSearchTab() {
+
+		WebElement hotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
+		hotelTab.click();
+		WebElement searchTab = driver.findElement(By.cssSelector(".sc-phbroq-2.uQFRS.AutoComplete__Input"));
+		String actualLanguage = driver.findElement(By.tagName("html")).getAttribute("lang");
+
+		String[] locationTabIsEn = { "Dubai", "Jeddah", "Riyadh" };
+		String[] locationTabIsAr = { "دبي", "جدة" };
+
+		int randIndexByEn = rand.nextInt(locationTabIsEn.length);
+		int randIndexByAr = rand.nextInt(locationTabIsAr.length);
+
+		if ("en".equalsIgnoreCase(actualLanguage)) {
+
+			searchTab.sendKeys(locationTabIsEn[randIndexByEn]);
+			WebElement firstResult = driver.findElement(By.cssSelector(".sc-phbroq-4.gGwzVo.AutoComplete__List"));
+			firstResult.getAttribute("data-testid");
+			firstResult.click();
+		} else {
+			searchTab.sendKeys(locationTabIsAr[randIndexByAr]);
+			searchTab.sendKeys(locationTabIsEn[randIndexByEn]);
+			WebElement firstResult = driver.findElement(By.cssSelector(".sc-phbroq-4.gGwzVo.AutoComplete__List"));
+			firstResult.getAttribute("data-testid");
+			firstResult.click();
+
+		}
 
 	}
 }
