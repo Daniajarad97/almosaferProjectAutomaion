@@ -21,7 +21,7 @@ public class homePageTesting {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(almosaferURL);
-//		driver.findElement(By.xpath("//button[@type='button']")).click();
+		driver.findElement(By.cssSelector(".sc-jTzLTM.hQpNle.cta__button.cta__saudi.btn.btn-primary")).click();
 
 	}
 
@@ -43,8 +43,24 @@ public class homePageTesting {
 
 	@Test(priority = 3, enabled = true)
 	public void checkContactNumber() {
-	
-		
+		String expectedContactNumber = "+966554400000";
+		String actualCntactNumber = driver.findElement(By.tagName("strong")).getText();
+		Assert.assertEquals(actualCntactNumber, expectedContactNumber);
+
 	}
 
+	@Test(priority = 4, enabled = true)
+	public void checkQitafLogoIsDisplayed() {
+		boolean expectedResyltForTheLogo = true;
+		WebElement theFooter = driver.findElement(By.tagName("footer"));
+
+//		WebElement classFooter = theFooter.findElement(By.cssSelector(".sc-fihHvN.eYrDjb"));
+//		boolean actualResultForTheLogo = classFooter.findElement(By.cssSelector(".sc-bdVaJa.bxRSiR.sc-ekulBa.eYboXF"))
+//				.isDisplayed();
+
+		boolean actualResultForTheLogo = theFooter.findElement(By.cssSelector(".sc-bdVaJa.bxRSiR.sc-ekulBa.eYboXF"))
+				.isDisplayed();
+
+		Assert.assertEquals(actualResultForTheLogo, expectedResyltForTheLogo);
+	}
 }

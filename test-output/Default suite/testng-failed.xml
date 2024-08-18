@@ -6,7 +6,7 @@
       <class name="homePage.homePageTesting">
         <methods>
           <include name="setUp"/>
-          <include name="checkTheDegultLanguageIsEnglish"/>
+          <include name="checkQitafLogoIsDisplayed"/>
         </methods>
       </class> <!-- homePage.homePageTesting -->
     </classes>
