@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T16:31:45 AST" name="Default suite" finished-at="2024-08-18T16:31:54 AST" duration-ms="9508">
+  <suite started-at="2024-08-21T16:37:57 AST" name="Default suite" finished-at="2024-08-21T16:38:21 AST" duration-ms="23450">
     <groups>
     </groups>
-    <test started-at="2024-08-18T16:31:45 AST" name="Default test" finished-at="2024-08-18T16:31:54 AST" duration-ms="9508">
+    <test started-at="2024-08-21T16:37:57 AST" name="Default test" finished-at="2024-08-21T16:38:21 AST" duration-ms="23450">
       <class name="homePage.homePageTesting">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:45 AST" name="setUp" finished-at="2024-08-18T16:31:51 AST" duration-ms="6179" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:37:57 AST" name="setUp" finished-at="2024-08-21T16:38:01 AST" duration-ms="3688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkTheDefultLanguageIsEnglish()[pri:1, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="checkTheDefultLanguageIsEnglish" finished-at="2024-08-18T16:31:51 AST" duration-ms="141" status="PASS">
+        <test-method signature="checkTheDefultLanguageIsEnglish()[pri:1, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="checkTheDefultLanguageIsEnglish" finished-at="2024-08-21T16:38:01 AST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheDefultLanguageIsEnglish -->
-        <test-method signature="checkDefultCurrency()[pri:2, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="checkDefultCurrency" finished-at="2024-08-18T16:31:51 AST" duration-ms="50" status="PASS">
+        <test-method signature="checkDefultCurrency()[pri:2, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="checkDefultCurrency" finished-at="2024-08-21T16:38:01 AST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDefultCurrency -->
-        <test-method signature="checkContactNumber()[pri:3, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="checkContactNumber" finished-at="2024-08-18T16:31:51 AST" duration-ms="29" status="PASS">
+        <test-method signature="checkContactNumber()[pri:3, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="checkContactNumber" finished-at="2024-08-21T16:38:01 AST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContactNumber -->
-        <test-method signature="checkQitafLogoIsDisplayed()[pri:4, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="checkQitafLogoIsDisplayed" finished-at="2024-08-18T16:31:51 AST" duration-ms="54" status="PASS">
+        <test-method signature="checkQitafLogoIsDisplayed()[pri:4, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="checkQitafLogoIsDisplayed" finished-at="2024-08-21T16:38:01 AST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkQitafLogoIsDisplayed -->
-        <test-method signature="theHotelTabIsNotSelected()[pri:5, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="theHotelTabIsNotSelected" finished-at="2024-08-18T16:31:51 AST" duration-ms="32" status="PASS">
+        <test-method signature="theHotelTabIsNotSelected()[pri:5, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="theHotelTabIsNotSelected" finished-at="2024-08-21T16:38:01 AST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- theHotelTabIsNotSelected -->
-        <test-method signature="checkFlightDeparture()[pri:6, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:51 AST" name="checkFlightDeparture" finished-at="2024-08-18T16:31:52 AST" duration-ms="195" status="PASS">
+        <test-method signature="checkFlightDeparture()[pri:6, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="checkFlightDeparture" finished-at="2024-08-21T16:38:01 AST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFlightDeparture -->
-        <test-method signature="changeLanguage()[pri:7, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:52 AST" name="changeLanguage" finished-at="2024-08-18T16:31:53 AST" duration-ms="1207" status="PASS">
+        <test-method signature="changeLanguage()[pri:7, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:01 AST" name="changeLanguage" finished-at="2024-08-21T16:38:03 AST" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeLanguage -->
-        <test-method signature="switchToHotelSearchTab()[pri:8, instance:homePage.homePageTesting@52b56a3e]" started-at="2024-08-18T16:31:53 AST" name="switchToHotelSearchTab" finished-at="2024-08-18T16:31:54 AST" duration-ms="1524" status="PASS">
+        <test-method signature="switchHotelSearchTab()[pri:8, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:03 AST" name="switchHotelSearchTab" finished-at="2024-08-21T16:38:05 AST" duration-ms="1441" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- switchToHotelSearchTab -->
+        </test-method> <!-- switchHotelSearchTab -->
+        <test-method signature="RandomlySelectTheNumberOfVistor()[pri:9, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:05 AST" name="RandomlySelectTheNumberOfVistor" finished-at="2024-08-21T16:38:10 AST" duration-ms="5191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RandomlySelectTheNumberOfVistor -->
+        <test-method signature="CheckThePageFullyLoaded()[pri:10, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:10 AST" name="CheckThePageFullyLoaded" finished-at="2024-08-21T16:38:20 AST" duration-ms="10107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckThePageFullyLoaded -->
+        <test-method signature="SortItemsLowestToHighestPrice()[pri:11, instance:homePage.homePageTesting@5b970f7]" started-at="2024-08-21T16:38:20 AST" name="SortItemsLowestToHighestPrice" finished-at="2024-08-21T16:38:21 AST" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortItemsLowestToHighestPrice -->
       </class> <!-- homePage.homePageTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

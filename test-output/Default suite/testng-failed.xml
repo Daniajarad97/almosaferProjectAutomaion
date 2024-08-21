@@ -5,15 +5,8 @@
     <classes>
       <class name="homePage.homePageTesting">
         <methods>
-          <include name="checkFlightDeparture"/>
-          <include name="checkTheDefultLanguageIsEnglish"/>
-          <include name="checkContactNumber"/>
-          <include name="checkDefultCurrency"/>
-          <include name="changeLanguage"/>
-          <include name="switchToHotelSearchTab"/>
-          <include name="theHotelTabIsNotSelected"/>
           <include name="setUp"/>
-          <include name="checkQitafLogoIsDisplayed"/>
+          <include name="CheckThePageFullyLoaded"/>
         </methods>
       </class> <!-- homePage.homePageTesting -->
     </classes>
